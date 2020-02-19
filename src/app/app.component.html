@@ -1,0 +1,15 @@
+
+ <table style="width:100%">
+  <tr style="text-align:left">
+    <th>Document One</th>
+    <th>Document Two</th>
+    <th>Document Three</th>
+  </tr>
+  <tr>
+    <td><textarea [(ngModel)]="textarea" style ="width:99%;height:600px;resize:none"></textarea></td>
+    <td><textarea  [(ngModel)]="textarea2" style ="width:99%;height:600px;resize:none"></textarea></td>
+    <td ><textarea [(ngModel)]="textarea3" style ="width:99%;height:600px;resize:none"></textarea></td>
+  </tr>
+</table> 
+<div style="text-align:center">
+<button (click) = "compare(textarea.value,textarea2.value,textarea3.value)" style = "width:100px;" > Compare</button></div>
